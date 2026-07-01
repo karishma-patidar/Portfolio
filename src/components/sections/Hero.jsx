@@ -79,7 +79,7 @@ export default function Hero() {
               <a href="#projects" className="btn-secondary">
                 View Work
               </a>
-              <a href="/aarti_resume.pdf" download="Aarti_Resume.pdf" className="btn-secondary text-sm md:text-base">
+              <a href="../../../public/Aarti_Patidar_Resume_ATS.docx" download="Aarti_Patidar_Resume_ATS.docx" className="btn-secondary text-sm md:text-base">
                 Download CV
                 <Download size={18} />
               </a>
