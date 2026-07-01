@@ -21,12 +21,19 @@ export default function Contact() {
     };
 
     try {
-      const response = await fetch('https://portfolio-0981.onrender.com/api/contact', {
+      // Add the Web3Forms access key
+      const submitData = {
+        ...data,
+        access_key: import.meta.env.VITE_WEB3FORMS_KEY || '1e23c94e-cb48-4d17-8cb9-0837ed4884a7' 
+      };
+
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          Accept: 'application/json'
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(submitData),
       });
 
       const result = await response.json();
