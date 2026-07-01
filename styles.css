@@ -11,8 +11,8 @@
     --border-light: rgba(255, 255, 255, 0.08);
     --border-medium: rgba(255, 255, 255, 0.15);
     --border-strong: rgba(255, 255, 255, 0.3);
-    --font-heading: 'Fraunces', serif;
-    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Poppins', sans-serif;
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     --transition-fast: all 0.2s ease;
 }
@@ -111,7 +111,7 @@ img {
 }
 
 section {
-    padding: 8rem 0;
+    padding: 4rem 0;
     position: relative;
     border-bottom: 1px solid var(--border-light);
 }
@@ -1041,7 +1041,7 @@ footer {
 
 @media (max-width: 768px) {
     section {
-        padding: 5rem 0;
+        padding: 2rem 0;
     }
 
     .section-title {
