@@ -5,13 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "server": "node backend/server.js",
+    "server": "nodemon backend/server.js",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "concurrently \"npm run dev\" \"npm run server\""
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.2",
+    "concurrently": "^10.0.3",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
@@ -19,6 +21,7 @@
     "lucide-react": "^1.22.0",
     "mongoose": "^9.7.3",
     "nodemailer": "^9.0.3",
+    "nodemon": "^3.1.14",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-helmet-async": "^3.0.0",
